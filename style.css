@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+header{
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+  
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-links li {
+    margin: 0 20px;
+}
+  
+.nav-links li a {
+    text-decoration: none;
+    color: #3a3535;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.nav-links li a:hover {
+    border-bottom: solid black 2px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 95px;
+    color: #fff;
+    border-bottom: 50px;
+    font-family: "Cinzel";
+}
+
+.content p{
+    color: #fff;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
+
+.content a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 15px 25px;
+    transition: 0.3s;
+    margin-top: 50px;
+}
+
+.content a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.values-section {
+    padding: 50px;
+    background-color: #f7f7f7;
+    justify-content: center;
+}
+
+.values-section h3{
+    text-align: center;
+    font-family: Cinzel;
+    font-size: 40px;
+    padding: 40px 0;
+}
+
+.values-section p{
+    font-size: 30px;
+    padding: 0 20px;
+}
+  
+.new-arrivals {
+    padding: 50px;
+    background-color: #fff;
+}
+  
+.best-sellers {
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+.product-1 img{
+    width: 100%;
+    height: auto;
+}
+
+header{
+    background-image: url("images/boy-girl-cheering-with-smoothies.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* .caption{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+@media (min-width: 768px) {
+    /* show 3 items */
+    .carousel-inner .active,
+    .carousel-inner .active + .carousel-item,
+    .carousel-inner .active + .carousel-item + .carousel-item {
+      display: block;
+    }
+  
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+      transition: none;
+    }
+  
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+  
+    .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+      position: absolute;
+      top: 0;
+      right: -33.3333%;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    /* farthest right hidden item must be abso position for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      display: block;
+      visibility: visible;
+    }
+  
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+      position: relative;
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+      display: block;
+      visibility: visible;
+    }
+  }
+  
+
+
+/* .bg-clip{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.video-container{
+    position: relative;
+    z-index: -1;
+}
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+} */
+
+/* @media (min-aspect-ratio: 16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .background-clip {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+   }
+} */
