@@ -196,16 +196,16 @@ header{
 }
 
 .contact-container a:hover{
-    color: aqua;
+    color: brown;
 }
 
-footer{
+/* footer{
     background-image: url("images/top-close-view-soda-can-dark-background.jpg");
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 100vh;
-}
+} */
  
 
 
