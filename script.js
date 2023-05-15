@@ -22,4 +22,11 @@ $(document).ready(function() {
       }
     });
   });
+
+function openForm() {
+    document.getElementById("sampleForm").style.display = "block";
+}
   
+function closeForm() {
+    document.getElementById("sampleForm").style.display = "none";
+}
